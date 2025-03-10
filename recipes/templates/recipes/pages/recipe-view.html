@@ -1,15 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
 {% include 'recipes/partials/head.html' %}
 
-<title>{% block title %}Home | {% endblock title %}Recipes</title>
+<title>{% block title %}{% endblock title %} Recipes</title>
+</head>
 
 <body>
     {% include 'recipes/partials/header.html' %}
     {% include 'recipes/partials/search.html' %}
 
     <main class="main-content-container ">
-        <div class="main-content main-content-list container">
-            {% include 'recipes/partials/recipe.html'%}
-            {% include 'recipes/partials/recipe.html'%}
+        <div class="main-content main-content-detail container">
             {% include 'recipes/partials/recipe.html'%}
         </div>
     </main>
